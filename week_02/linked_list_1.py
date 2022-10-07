@@ -25,7 +25,7 @@ class LinkedList:
         #ako lista ima elemenata
         if self.head:
             #dok next trenutnog Node-a nije None
-            while current.next:
+            while current:
                 print(current.value)
                 current = current.next
 
@@ -104,6 +104,48 @@ class LinkedList:
                 # lista ima samo jedan element
                 self.head = current.next
 
+    # brisanje elementa koji se nalazi na unijetoj poziciji
+    def delete_from_position(self, position):
+        current = self.head
+        prev = None
+        counter = 0
+
+        if position == 1:
+            self.head = current.next
+            current = None
+            return
+
+        while current and counter != position:
+            prev = current
+            current = current.next
+            counter = counter + 1
+
+        if current is None:
+            return None
+
+        prev.next = current.next
+        current = None
+
+    # funkcija za racunanje duzine liste
+    def len_iterative(self):
+        count = 0
+        current = self.head
+        while current:
+            current = current.next
+            count = count + 1
+        return count
+
+    # rekurzvina funkcija za racunanje duzine liste
+    def get_count_rec(self, node):
+        #base case
+        if not node:
+            return 0
+        else:
+            #step
+            return 1 + self.get_count_rec(node.next)
+
+    def recursive_len(self):
+        return self.get_count_rec(self.head)
 
 
 
@@ -112,7 +154,7 @@ class LinkedList:
 n1 = Node(5)
 n2 = Node(7)
 n3 = Node(3)
-n4 = Node(2)
+n4 = Node(6)
 
 # Creating List
 l1 = LinkedList()
@@ -147,4 +189,13 @@ l1.print_list()
 print(l1.get_value_from_position(2).value) #pozicija != index
 """
 
+""" 
+l1.print_list()
+l1.delete_from_position(2)
+print('---')
+l1.print_list()
+"""
 
+""" print(l1.len_iterative()) """
+
+""" print(l1.recursive_len()) """
