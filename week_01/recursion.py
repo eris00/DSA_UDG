@@ -59,9 +59,9 @@ print(cif_num(32426))
 """
 
 # 6. Napisati rekurzivnu funkciju koja vraca najveci element liste
-def najveci_el(list):
-    if len(list) == 1:
-        return list[0]
-    else:
+# def najveci_el(list):
+#     if len(list) == 1:
+#         return list[0]
+#     else:
 
 
