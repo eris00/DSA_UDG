@@ -77,8 +77,6 @@ class DoublyLinkedList:
             current_2 = current_1
 
     # 01. ...izbaciti N zadnjih elemenata iz liste
-    def izbaci():
-
 
 
     # Append, delete_last, delete_last_two, insert_at_position, delete_element_by_value,
