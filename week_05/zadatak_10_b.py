@@ -44,10 +44,9 @@ class BinaryTree:
             self.max_salary(data, current_node.right)
 
 
-singer1 = Node("Michael", "20000")
-singer2 = Node("Kelly", "42000")
-singer3 = Node("John", "33000")
-singer4 = Node("Jhoe", "11000")
+
+
+
 
 
 
