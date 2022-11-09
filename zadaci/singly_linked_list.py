@@ -138,7 +138,16 @@ class Linked_lists:
             current.next = current_2.next
             current = current.next
 
-    # Brojeve sa ulaza stavljati u jednostruko olančanu listu sve dok se ne unese nula, a zatim dobijenu listu ispisati na izlaz
+    # Napisati funkciju koja na osnovu ulazne liste l1, kreira i štampa novu listu l2, a koja se sastoji od neparnih elemenata iz liste l1 koje je potrebno kvadrirat
+    def neparni_kvadrat(self):
+        list_pom = Linked_lists()
+        current = self.head
+        while current:
+            if not current.value % 2:
+                current.value = current.value * current.value
+                list_pom.append(current)
+            current = current.next
+        return list_pom
 
 
 
@@ -160,9 +169,10 @@ list1.append(el5)
 list1.append(el6)
 
 list1.print_list()
-print('--- --- ---')
 
-list1.delete_svaki_drugi()
+print('--- ---')
+
+list1.neparni_kvadrat()
 
 
 
