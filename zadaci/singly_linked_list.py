@@ -138,6 +138,10 @@ class Linked_lists:
             current.next = current_2.next
             current = current.next
 
+    # Brojeve sa ulaza stavljati u jednostruko olančanu listu sve dok se ne unese nula, a zatim dobijenu listu ispisati na izlaz
+
+
+
 
 list1 = Linked_lists()
 

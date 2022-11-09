@@ -33,7 +33,7 @@ class LinkedList:
             current = current.next
         return counter
     """
-
+""" 
     def unija(self,l1,l2):
         pom_list = LinkedList()
         current = self.head
@@ -48,7 +48,7 @@ class LinkedList:
             current = current.next
 
 return pom_list
-
+"""
 
 
 
