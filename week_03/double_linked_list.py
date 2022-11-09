@@ -76,7 +76,12 @@ class DoublyLinkedList:
             current_1 = current_1.next
             current_2 = current_1
 
-    # 01. ...izbaciti N zadnjih elemenata iz liste
+    #izbaciti N zadnjih elemenata iz liste
+
+
+
+    #ukloniti duplikate iz liste
+
 
 
     # Append, delete_last, delete_last_two, insert_at_position, delete_element_by_value,

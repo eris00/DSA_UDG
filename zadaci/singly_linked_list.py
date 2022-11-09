@@ -129,7 +129,7 @@ class Linked_lists:
                 current = current.next
             return min_elem
 
-    # brisi svaki drugi element iz liste #! ! !
+    # brisi svaki drugi element iz liste ! ! !
     def delete_svaki_drugi(self):
         current = self.head
         current2 = current.next
@@ -137,7 +137,6 @@ class Linked_lists:
             current_2 = current.next
             current.next = current_2.next
             current = current.next
-
 
 
 list1 = Linked_lists()

@@ -29,4 +29,16 @@ class Doubly_linked_list:
         self.head = self.head.next
         self.prev = None
 
+    # izbaciti N zadnjih elemenata iz liste
 
+
+
+    # uzmi srednju vrijednost
+
+
+
+    #jesu li dvije liste identicne eq
+
+
+
+    # append, delete_last, delete_first, delete_last_two, insert_at_position, delete_element_by_value, reverse, concat
