@@ -9,13 +9,14 @@ def sum(list):
 # print(sum(lista))
 
 ''' rekurzivnu funkciju koja stampa prvih 50 prirodnih brojeva '''
-def first_fifty(n=50):
+def first_fifty(num):
+    print(num)
+    if num == 0:
+        return num
+    else:
+        return first_fifty(num - 1)
 
-    if n <= 50:
-        print(n)
-        first_fifty(n + 1)
-
-# first_fifty()
+# first_fifty(50)
 
 ''' Napisati rekurzivnu funkciju koja vraca najveci element liste '''
 def najveci_el(list):
@@ -33,7 +34,7 @@ def print_list(list):
         print(list[0])
         return print_list(list[1:])
 
-print_list([2,4,6,1,7])
+# print_list([2,4,6,1,7])
 
 
 ''' rekurzivna funkcija koja racua sumu cifara unijetog broja '''
