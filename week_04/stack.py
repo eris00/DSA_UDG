@@ -25,10 +25,10 @@ class Stack:
     def get_stack(self):
         return self.items
 
-s = Stack()
-s.push(1)
-s.push(2)
-s.push(4)
-s.push(9)
-
-print(s.get_stack())
+# s = Stack()
+# s.push(1)
+# s.push(2)
+# s.push(4)
+# s.push(9)
+#
+# print(s.get_stack())
