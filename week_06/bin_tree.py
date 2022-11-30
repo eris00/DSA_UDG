@@ -1,22 +1,5 @@
-# queue za level order
-class Queue:
-    def __init__(self):
-        self.items = []
 
-    def enqueue(self, item):
-        self.items.append(item)
-
-    def dequeue(self):
-        if len(self.items) > 0:
-            return self.items.pop(0)
-
-    def peek(self):
-        if len(self.items) > 0:
-            return self.items[0].value
-
-    def __len__(self):
-        return len(self.items)
-
+from queue import Queue
 
 class Node:
     def __init__(self, value):
@@ -119,6 +102,9 @@ class BinaryTree:
         elif data < current_node.value and current_node.left:
             return self._find(data, current_node.left)
 
+    # node koji ima najmanju vrijednost
+    def min_value_node(self, node):
+        current = node
 
 
 bin_tree = BinaryTree(6)
@@ -128,5 +114,5 @@ bin_tree.insert(7)
 bin_tree.insert(2)
 bin_tree.insert(9)
 
-print(bin_tree.print_tree("preorder"))
-print(bin_tree.find(7))
+print(bin_tree.print_tree("levelorder"))
+print(bin_tree.find(11))
