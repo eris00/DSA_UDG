@@ -102,11 +102,6 @@ class BinaryTree:
         elif data < current_node.value and current_node.left:
             return self._find(data, current_node.left)
 
-<<<<<<< HEAD
-    # node koji ima najmanju vrijednost
-    def min_value_node(self, node):
-        current = node
-=======
     # funkcija koja vraća Node sa najmanjom vrijednošću
     def min_value_node(self, node):
         current = node
@@ -161,7 +156,6 @@ class BinaryTree:
     def get_num_leafs(self):
         return self._get_num_leafs(self.root)
 
->>>>>>> 8f6d6a00dce4fd55ef44da3ec3d1a0558c574b48
 
 
 bin_tree = BinaryTree(6)
@@ -170,11 +164,12 @@ bin_tree.insert(5)
 bin_tree.insert(7)
 bin_tree.insert(2)
 bin_tree.insert(9)
-<<<<<<< HEAD
 
+'''
 print(bin_tree.print_tree("levelorder"))
 print(bin_tree.find(11))
-=======
+'''
+
 """
 print(bin_tree.print_tree("preorder"))
 print(bin_tree.find(7))
@@ -192,4 +187,3 @@ print(bin_tree.size())
 """
 
 print(bin_tree.get_num_leafs())
->>>>>>> 8f6d6a00dce4fd55ef44da3ec3d1a0558c574b48
