@@ -165,8 +165,10 @@ bin_tree.insert(7)
 bin_tree.insert(2)
 bin_tree.insert(9)
 
+
 '''
 print(bin_tree.print_tree("levelorder"))
+
 print(bin_tree.find(11))
 '''
 
@@ -185,5 +187,6 @@ print(bin_tree.print_tree("levelorder"))
 """
 print(bin_tree.size())
 """
-
+""" 
 print(bin_tree.get_num_leafs())
+"""
